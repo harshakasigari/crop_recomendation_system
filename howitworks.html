@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>How It Works - Crop Recommendation System</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    body {
+      background: linear-gradient(to right, #f1f8e9, #e0f7fa);
+      color: #2e7d32;
+      padding: 20px;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      color: #1b5e20;
+    }
+
+    .steps {
+      max-width: 1000px;
+      margin: 40px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+
+    .step {
+      display: flex;
+      align-items: center;
+      gap: 30px;
+      background-color: #ffffff;
+      border-left: 8px solid #43a047;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .step:hover {
+      transform: scale(1.02);
+    }
+
+    .step-number {
+      background-color: #66bb6a;
+      color: white;
+      font-size: 1.5rem;
+      font-weight: bold;
+      border-radius: 50%;
+      width: 50px;
+      height: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .step-text h2 {
+      font-size: 1.4rem;
+      margin-bottom: 5px;
+      color: #1b5e20;
+    }
+
+    .step-text p {
+      font-size: 1rem;
+      line-height: 1.5;
+      color: #444;
+    }
+
+    .back-button {
+      display: block;
+      text-align: center;
+      margin-top: 50px;
+    }
+
+    .back-button a {
+      background-color: #2e7d32;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .back-button a:hover {
+      background-color: #66bb6a;
+    }
+
+    @media (max-width: 768px) {
+      .step {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .step-number {
+        margin-bottom: 10px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>How It Works</h1>
+    <p>A step-by-step demonstration of how our Crop Recommendation System operates</p>
+  </header>
+
+  <section class="steps">
+
+    <div class="step">
+      <div class="step-number">1</div>
+      <div class="step-text">
+        <h2>Input Parameters</h2>
+        <p>Users provide input such as soil type, pH level, temperature, humidity, and rainfall through a simple form.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">2</div>
+      <div class="step-text">
+        <h2>Preprocessing</h2>
+        <p>The system cleans and normalizes the data to match the format required by the machine learning model.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">3</div>
+      <div class="step-text">
+        <h2>Prediction Engine</h2>
+        <p>Our trained ML model analyzes the input using historical crop data and environmental factors to predict suitable crops.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">4</div>
+      <div class="step-text">
+        <h2>Crop Recommendations</h2>
+        <p>The system recommends 2–3 best-fit crops based on the processed data and predictive accuracy.</p>
+      </div>
+    </div>
+
+    <div class="step">
+      <div class="step-number">5</div>
+      <div class="step-text">
+        <h2>Display & Feedback</h2>
+        <p>The results are displayed with crop details, and users can give feedback to help improve the model further.</p>
+      </div>
+    </div>
+
+  </section>
+
+  <div class="back-button">
+    <a href="index.html">← Back to Home</a>
+  </div>
+
+</body>
+</html>
